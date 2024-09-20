@@ -21,7 +21,7 @@ There are 6 buttons with different functionality.
 ```bash
 touch .env
 # Add this content
-OPENAI_API_KEY=<YOUR KEY>
+OPENAI_API_KEY=#this is where your key goes
 ```
 3. You have the option to either run as a local container using the Dockerfile or pull the image from my repository via Docker-Compose and the DockerHub.
 
