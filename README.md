@@ -17,6 +17,7 @@ There are 6 buttons with different functionality.
 ## How to Run
 1. Ensure that you pull down the full code base
 2. Create a `.env` file which should contain your OpenAPI Key
+3. The `.env` will go in the root directory not in the env/ directory
 
 ```bash
 touch .env
