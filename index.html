@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Language Learning App</title>
+    <!-- Quill Editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Toolbar -->
+    <div id="toolbar">
+        <button id="assist-btn">Assist in Spanish</button>
+        <button id="translate-to-spanish-btn">Translate to Spanish</button>
+        <button id="translate-to-english-btn">Translate to English</button>
+        <button id="conjugate-btn">Conjugate</button>
+        <button id="define-btn">Define</button>
+        <button id="question-btn">Ask a Question</button>
+    </div>
+
+    <!-- Editor -->
+    <div id="editor-container"></div>
+
+    <!-- Response Panes -->
+    <div id="panes-container">
+        <div id="response-container" class="pane">
+            <h3>Responses</h3>
+            <div id="response-content"></div>
+        </div>
+        <div id="conjugation-container" class="pane">
+            <h3>Conjugations</h3>
+            <div id="conjugation-content"></div>
+        </div>
+        <div id="definition-container" class="pane">
+            <h3>Definitions</h3>
+            <div id="definition-content"></div>
+        </div>
+    </div>
+
+    <!-- Modal for Questions -->
+    <div id="question-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <textarea id="question-input" placeholder="Ask your question here..."></textarea>
+            <button id="submit-question">Submit</button>
+        </div>
+    </div>
+
+    <!-- Quill JS -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

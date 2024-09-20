@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#toolbar {
+    margin-bottom: 10px;
+}
+
+#toolbar button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#editor-container {
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+/* Panes Container */
+#panes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensure panes align at the top */
+    margin-top: 20px;
+}
+
+.pane {
+    flex: 1 1 30%;
+    min-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 250px; /* Default height for panes */
+    overflow-y: auto;
+}
+
+.pane h3 {
+    margin-top: 0;
+}
+
+/* Specific Pane Adjustments */
+
+/* Increase the height of the Conjugations pane */
+#conjugation-container {
+    height: 500px; /* Adjust this value to make the pane taller */
+    overflow-y: auto;
+}
+
+/* Adjust other panes if necessary */
+#response-container {
+    /* You can adjust the height if needed */
+}
+
+#definition-container {
+    /* You can adjust the height if needed */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 800px) {
+    .pane {
+        flex: 1 1 100%;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+#question-input {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Conjugation Table Styles */
+.conjugation-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.conjugation-table td, .conjugation-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.conjugation-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
