@@ -5,7 +5,7 @@ This is a simple python based applicaton which leverages the OpenAI API to perfo
 
 ## How It Works
 
-![alt text](./img/example.pngIsolated.png "FrontEnd")
+![alt text](./img/example.png "FrontEnd")
 
 There are 6 buttons with different functionality.
 - **Assist in Spanish:** analyzes the written text if in spanish to provide guidance on assisting the user
